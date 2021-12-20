@@ -65,6 +65,12 @@ function blob_fixup() {
             # Replace libcrypto with vndk33 libcrypto
             ${PATCHELF} --replace-needed libcrypto.so libcrypto-v33.so "${2}"
             ;;
+        vendor/lib*/libsensorlistener.so)
+            ${PATCHELF} --add-needed "libshim_sensorndkbridge.so" "${2}"
+            ;;
+        vendor/lib64/unihal_android.so)
+            ${PATCHELF} --add-needed "libshim_sensorndkbridge.so" "${2}"
+            ;;
     esac
 }
 
