@@ -311,6 +311,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     libprotobuf-cpp-full \
     librmnetctl \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat \
+    librmnetctl \
     secril_config_svc
 
 # Sensors
