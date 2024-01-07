@@ -89,10 +89,12 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_RAMDISK_USE_LZ4 := true
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 TARGET_KERNEL_SOURCE := kernel/samsung/sm8550
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/$(HOST_OS)-x86/clang r450784e
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/$(HOST_OS)-x86/clang-r450784e
 TARGET_KERNEL_CONFIG := \
-    gki_defconfig
+    vendor/kalama-gki_defconfig
 KERNEL_LTO := none
+# Kernel modules
+TARGET_KERNEL_EXT_MODULE_ROOT := kernel/samsung/sm8550-modules
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
