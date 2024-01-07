@@ -91,8 +91,11 @@ BOARD_USES_GENERIC_KERNEL_IMAGE := true
 TARGET_KERNEL_SOURCE := kernel/samsung/sm8550
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/$(HOST_OS)-x86/clang-r450784e
 TARGET_KERNEL_CONFIG := \
-    vendor/kalama-gki_defconfig
-KERNEL_LTO := none
+    gki_defconfig \
+    vendor/kalama_GKI.config \
+    vendor/kalama_sec.config \
+    vendor/kalama_sec_userdebug.config
+KERNEL_LTO := thin
 # Kernel modules
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/samsung/sm8550-modules
 
