@@ -207,7 +207,9 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor \
-    libkeymaster_messages.vendor
+    libkeymaster_messages.vendor \
+    libkeymaster4_1support.vendor \
+    libkeymaster4support.vendor
 
 # Keymint
 PRODUCT_PACKAGES += \
