@@ -72,17 +72,22 @@ BOARD_INIT_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
 
 # Kernel
+BOARD_KERNEL_CMDLINE := \
+    androidboot.hardware=qcom \
+    androidboot.memcg=1 \
+    androidboot.usbcontroller=a600000.dwc3
+
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
     androidboot.usbcontroller=a600000.dwc3
 
-BOARD_KERNEL_CMDLINE := \
+BOARD_KERNEL_CMDLINE += \
     printk.devkmsg=on \
     firmware_class.path=/vendor/firmware_mnt/image \
     video=vfb:640x400,bpp=32,memsize=3072000
 
-BOARD_BOOTCONFIG += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
@@ -145,6 +150,7 @@ TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_RECOVERY_MKBOOTIMG_ARGS += --header_version 2
+BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
