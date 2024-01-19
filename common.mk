@@ -245,7 +245,10 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
     libcodec2_hidl@1.0.vendor \
+    libcodec2_hidl@1.1.vendor:64 \
+    libcodec2_hidl@1.2.vendor:64 \
     libcodec2_vndk.vendor \
+    libmm-omxcore \
     libpalclient
 
 PRODUCT_COPY_FILES += \
