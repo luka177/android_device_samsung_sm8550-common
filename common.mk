@@ -317,6 +317,10 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti.vendor \
     libvndfwk_detect_jni.qti_vendor
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-V1-ndk_platform.vendor
+
 # QTI
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
