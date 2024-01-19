@@ -95,20 +95,6 @@
         <fqname>IRadioVoice/slot1</fqname>
         <fqname>IRadioVoice/slot2</fqname>
     </hal>
-    <hal format="aidl" override="true">
-        <name>android.hardware.security.keymint</name>
-        <version>2</version>
-        <interface>
-            <name>IKeyMintDevice</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IRemotelyProvisionedComponent</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>IKeyMintDevice/default</fqname>
-        <fqname>IRemotelyProvisionedComponent/default</fqname>
-    </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.radio.am</name>
         <transport>hwbinder</transport>

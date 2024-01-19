@@ -101,4 +101,44 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.samsung.hardware.security.fkeymaster</name>
+        <version>1</version>
+        <interface>
+            <name>ISehFkeymaster</name>
+            <instance>default</instance>
+        </interface>
+   </hal>
+   <hal format="aidl" optional="true">
+        <name>vendor.samsung.hardware.frcmc</name>
+        <version>1</version>
+        <interface>
+            <name>ISehFrcMc</name>
+            <instance>default</instance>
+        </interface>
+   </hal>
+   <hal format="aidl" optional="true">
+        <name>vendor.samsung.hardware.hyper</name>
+        <version>2</version>
+        <interface>
+            <name>ISehHyPer</name>
+            <instance>default</instance>
+        </interface>
+   </hal>
+   <hal format="aidl" optional="true">
+        <name>android.hardware.light</name>
+        <version>1</version>
+        <interface>
+            <name>ILights</name>
+            <instance>default</instance>
+        </interface>
+   </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.perf</name>
+        <version>2.0-3</version>
+        <interface>
+            <name>IPerf</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
