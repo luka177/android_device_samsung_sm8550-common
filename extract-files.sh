@@ -62,6 +62,8 @@ function blob_fixup() {
     case "${1}" in
         vendor/bin/hw/android.hardware.security.keymint-service)
             ${PATCHELF} --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
+            # Replace libcrypto with vndk33 libcrypto
+            ${PATCHELF} --replace-needed libcrypto.so libcrypto-v33.so "${2}"
             ;;
     esac
 }
