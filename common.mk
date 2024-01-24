@@ -99,6 +99,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider-V1-ndk.vendor \
     libcamera2ndk_vendor \
     libgrallocusage.vendor \
+    libmeminfo.vendor:64 \
     vendor.qti.hardware.camera.aon@1.3.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
