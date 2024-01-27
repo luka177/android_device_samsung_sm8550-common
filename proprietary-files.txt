@@ -1566,6 +1566,13 @@ vendor/firmware/ss_dsi_panel_PBA_BOOTING_FHD.dat
 vendor/firmware/wlan-connection-roaming-backup.ini
 vendor/firmware/wlan-connection-roaming.ini
 
+#Vibration
+vendor/lib64/vendor.samsung.hardware.vibrator-V5-ndk.so
+vendor/bin/hw/vendor.samsung.hardware.vibrator-service
+vendor/etc/vintf/manifest/vendor.samsung.hardware.vibrator-default.xml
+vendor/etc/init/vendor.samsung.hardware.vibrator-default.rc
+
+
 # Video
 vendor/lib/libstreamparser.so
 vendor/lib/libvideotxr.so
