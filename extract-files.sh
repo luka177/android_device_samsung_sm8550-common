@@ -71,6 +71,9 @@ function blob_fixup() {
         vendor/lib64/unihal_android.so)
             ${PATCHELF} --add-needed "libshim_sensorndkbridge.so" "${2}"
             ;;
+        vendor/lib64/hw/gatekeeper.mdfpp.so)
+            ${PATCHELF} --replace-needed libcrypto.so libcrypto-v33.so "${2}"
+            ;;
     esac
 }
 
