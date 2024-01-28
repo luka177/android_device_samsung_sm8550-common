@@ -1103,6 +1103,8 @@ vendor/bin/init.qti.media.sh
 vendor/etc/init/init.qti.media.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
+vendor/etc/seccomp_policy/samsung.software.media.c2-base-policy
+vendor/lib64/libcodec2_vndk.so
 vendor/etc/media_kalama/video_system_specs.json
 vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy
