@@ -59,6 +59,20 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "vendor.samsung.rilchip.qcom.rc",
+    src: "vendor.samsung.rilchip.qcom.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.vendor.rilcommon.rc",
+    src: "init.vendor.rilcommon.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.target.rc",
     src: "init.target.rc",
     sub_dir: "init/hw",
