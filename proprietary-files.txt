@@ -752,9 +752,6 @@ vendor/lib64/libsnpe_dsp_domains_v3.so
 vendor/lib64/libsnpe_wrapper.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
-# Gatekeeper
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-
 # Display (Postprocessing)
 vendor/bin/ppd
 vendor/lib64/libdisp-aba.so
