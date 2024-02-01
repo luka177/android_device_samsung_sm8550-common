@@ -162,6 +162,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint-service.samsung \
     android.hardware.biometrics.fingerprint-V2-ndk.vendor \
     android.hardware.biometrics.common-V2-ndk.vendor
 
@@ -238,6 +239,7 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor \
+    android.hardware.keymaster-V3-ndk.vendor \
     libkeymaster_messages.vendor \
     libkeymaster4_1support.vendor \
     libkeymaster4support.vendor
