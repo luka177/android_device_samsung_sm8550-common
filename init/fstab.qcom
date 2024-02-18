@@ -35,13 +35,13 @@
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
 #<src>                                                 <mnt_point>            <type>  <mnt_flags and options>                            <fs_mgr_flags>
-system                                                  /system                ext4    ro                                                   avb=vbmeta_system,wait,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey:/avb/t-gsi.avbpubkey
-system_ext                                              /system_ext            ext4    ro                                                   avb=vbmeta_system,wait,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey:/avb/t-gsi.avbpubkey
-product                                                 /product               ext4    ro                                                   avb,wait,logical,first_stage_mount
-vendor                                                  /vendor                ext4    ro                                                   avb,wait,logical,first_stage_mount
-vendor_dlkm                                             /vendor_dlkm           ext4    ro                                                   avb,wait,logical,first_stage_mount
-system_dlkm                                             /system_dlkm           ext4    ro                                                   avb,wait,logical,first_stage_mount
-odm                                                     /odm                   ext4    ro                                                   avb,wait,logical,first_stage_mount
+system                                                  /system                ext4    ro                                                   wait,logical,first_stage_mount
+system_ext                                              /system_ext            ext4    ro                                                   wait,logical,first_stage_mount,
+product                                                 /product               ext4    ro                                                   wait,logical,first_stage_mount
+vendor                                                  /vendor                ext4    ro                                                   wait,logical,first_stage_mount
+vendor_dlkm                                             /vendor_dlkm           ext4    ro                                                   wait,logical,first_stage_mount
+system_dlkm                                             /system_dlkm           ext4    ro                                                   wait,logical,first_stage_mount
+odm                                                     /odm                   ext4    ro                                                   wait,logical,first_stage_mount
 /dev/block/bootdevice/by-name/boot                      /boot                  emmc    defaults                                             defaults
 /dev/block/bootdevice/by-name/init_boot                 /init_boot             emmc    defaults                                             defaults,first_stage_mount
 /dev/block/bootdevice/by-name/vendor_boot               /vendor_boot           emmc    defaults                                             defaults,first_stage_mount
@@ -70,5 +70,5 @@ odm                                                     /odm                   e
 /devices/platform/soc/8804000.sdhci/mmc_host*           auto                   vfat    defaults                                             voldmanaged=sdcard:auto
 
 #CSC
-/dev/block/platform/soc/1d84000.ufshc/by-name/prism     /prism                 ext4    ro,barrier=1                                         avb,nofail,first_stage_mount
-/dev/block/platform/soc/1d84000.ufshc/by-name/optics    /optics                ext4    ro,barrier=1                                         avb,nofail,first_stage_mount
+/dev/block/platform/soc/1d84000.ufshc/by-name/prism     /prism                 ext4    ro,barrier=1                                         nofail,first_stage_mount
+/dev/block/platform/soc/1d84000.ufshc/by-name/optics    /optics                ext4    ro,barrier=1                                         nofail,first_stage_mount
