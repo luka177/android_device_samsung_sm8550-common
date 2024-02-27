@@ -94,6 +94,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0.vendor \
     android.frameworks.cameraservice.service@2.0.vendor \
     android.frameworks.cameraservice.service@2.1.vendor \
+    android.frameworks.cameraservice.service@2.2.vendor \
     android.hardware.camera.device-V1-ndk.vendor \
     android.hardware.camera.metadata-V1-ndk.vendor \
     android.hardware.camera.provider-V1-ndk.vendor \
