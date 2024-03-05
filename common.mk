@@ -334,7 +334,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-V1-ndk_platform.vendor
+    android.hardware.light-service.samsung
 
 # QTI
 PRODUCT_COPY_FILES += \

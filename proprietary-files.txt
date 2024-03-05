@@ -1526,13 +1526,6 @@ vendor/etc/vintf/manifest/hyper-default-sec.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.frcmc-service.xml
 vendor/lib64/vendor.samsung.hardware.frcmc-V1-ndk.so
 
-# Light
-vendor/bin/hw/vendor.samsung.hardware.light-service
-vendor/etc/init/lights-default-sec.rc
-vendor/etc/vintf/manifest/lights-default-sec.xml
-vendor/etc/vintf/manifest/lights-default-sec.xml
-vendor/lib64/vendor.samsung.hardware.light-V1-ndk.so
-
 # ESE
 vendor/lib/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
